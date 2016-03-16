@@ -11,7 +11,7 @@ hr {
 }
 
 main {
-  width: 74%;
+  width: 80%;
   margin: 5% auto;
 }
 
@@ -19,7 +19,7 @@ article {
   position: relative;
   box-sizing: border-box;
   border-radius: 5px;
-  width: 75%;
+  width: 70%;
   float: right;
   margin-bottom: 10px;
   padding: 3%;
@@ -45,7 +45,7 @@ article:nth-last-of-type(even) {
 time {
   display: block;
   position: absolute;
-  left: -22%;
+  left: -21%;
   top: -1%;
   // border: 1px solid black;
   box-sizing: border-box;
@@ -57,7 +57,7 @@ time {
 
 .military-time {
   display: block;
-  margin-top: 1%;
+  margin-top: 2%;
   left: -28.4%;
   font-size: 2.5em;
   font-family: sans-serif;
@@ -67,13 +67,13 @@ time {
 .icon {
   background-color: #40A3DC;
   border: 6px solid #ADDCF9;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   position: absolute;
-  top: -4%;
-  left: -155%;
-  // margin-top: -4%;
+  top: -8%;
+  left: -165%;
+  text-align: center;
 }
 
 .timeline {
@@ -81,8 +81,92 @@ time {
   // height: 100%;
   background-color: #ADDCF9;
   position: absolute;
-  left: -10%;
+  left: -8%;
   top: 5%;
-  bottom: -5%;
+  bottom: -10%;
   float: right;
+}
+
+i {
+  padding-top: 9px;
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  body {
+    // width: 100%;
+    background-color: red;
+  }
+
+  main {
+    width: 95%;
+    margin: 2%;
+  }
+
+  article {
+    width: 80%;
+  }
+
+  .timeline {
+    left: -8%;
+  }
+
+  .military-time {
+    left: -25%;
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  body {
+    // width: 100%;
+    background-color: #999;
+  }
+
+  main {
+    width: 95%;
+    margin: 2%;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  .timeline {
+    left: -8%;
+  }
+
+  time {
+    position: relative;
+    left: 0;
+    float: right;
+    text-shadow: rgb(61, 65, 74) 1px 1px 0px;
+  }
+
+  .military-time {
+    position: relative;
+    left: 0;
+    font-size: 1.5em;
+    float: right;
+    // clear: right;
+    color: red;
+    margin-top: -1%;
+    margin-left: 1%;
+    text-shadow: rgb(61, 65, 74) 1px 1px 0px;
+  }
+
+  article:nth-of-type(odd) {
+     background-color: $lightBlueTheme;
+
+     .military-time {
+       color: $darkBlueTheme;
+     }
+  }
+
+  article:nth-last-of-type(even) {
+    background-color: $darkBlueTheme;
+
+    .military-time {
+      color: $lightBlueTheme;
+    }
+  }
 }
