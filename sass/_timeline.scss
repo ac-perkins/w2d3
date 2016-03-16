@@ -94,7 +94,7 @@ i {
 @media screen and (min-width: 668px) and (max-width: 1024px) {
   body {
     // width: 100%;
-    background-color: red;
+    // background-color: red;
   }
 
   main {
@@ -107,19 +107,20 @@ i {
   }
 
   .timeline {
-    left: -8%;
+    left: -6.5%;
   }
 
   .military-time {
     left: -25%;
-    font-size: 2.2em;
+    font-size: 1.9em;
+    margin-top: 2.5%;
   }
 }
 
 @media screen and (max-width: 667px) {
   body {
     // width: 100%;
-    background-color: #999;
+    // background-color: #999;
   }
 
   main {
@@ -139,19 +140,20 @@ i {
     position: relative;
     left: 0;
     float: right;
-    text-shadow: rgb(61, 65, 74) 1px 1px 0px;
+    top: -5%;
+    text-shadow: #3F7391 1px 1px 0px;
   }
 
   .military-time {
     position: relative;
     left: 0;
-    font-size: 1.5em;
+    font-size: 1.4em;
     float: right;
     // clear: right;
-    color: red;
+    // color: red;
     margin-top: -1%;
-    margin-left: 1%;
-    text-shadow: rgb(61, 65, 74) 1px 1px 0px;
+    margin-left: 2%;
+    text-shadow: #3F7391 1px 1px 0px;
   }
 
   article:nth-of-type(odd) {
