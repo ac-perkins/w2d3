@@ -68,26 +68,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/_timeline.scss */
-h2 {
-  font-size: 1.5em;
-}
-
-/* line 5, ../sass/_timeline.scss */
-hr {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  width: 100%;
-}
-
-/* line 13, ../sass/_timeline.scss */
 main {
-  width: 80%;
+  width: 86%;
   margin: 5% auto;
 }
 
-/* line 18, ../sass/_timeline.scss */
+/* line 6, ../sass/_timeline.scss */
 article {
   position: relative;
   box-sizing: border-box;
@@ -95,29 +81,53 @@ article {
   width: 70%;
   float: right;
   margin-bottom: 10px;
+  margin-right: 5%;
   padding: 3%;
   color: #fff;
 }
+/* line 17, ../sass/_timeline.scss */
+article h2 {
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+/* line 22, ../sass/_timeline.scss */
+article p {
+  font-family: sans-serif;
+}
+/* line 26, ../sass/_timeline.scss */
+article hr {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
 
-/* line 29, ../sass/_timeline.scss */
+/* line 33, ../sass/_timeline.scss */
 article:nth-of-type(odd) {
   background-color: #68BEF0;
 }
-/* line 32, ../sass/_timeline.scss */
+/* line 36, ../sass/_timeline.scss */
 article:nth-of-type(odd) .military-time {
   color: #68BEF0;
 }
-
-/* line 37, ../sass/_timeline.scss */
-article:nth-last-of-type(even) {
-  background-color: #2E93CD;
-}
 /* line 40, ../sass/_timeline.scss */
-article:nth-last-of-type(even) .military-time {
-  color: #2E93CD;
+article:nth-of-type(odd) .nub {
+  background-color: #68BEF0;
 }
 
 /* line 45, ../sass/_timeline.scss */
+article:nth-last-of-type(even) {
+  background-color: #2E93CD;
+}
+/* line 48, ../sass/_timeline.scss */
+article:nth-last-of-type(even) .military-time {
+  color: #2E93CD;
+}
+/* line 52, ../sass/_timeline.scss */
+article:nth-last-of-type(even) .nub {
+  background-color: #2E93CD;
+}
+
+/* line 57, ../sass/_timeline.scss */
 time {
   display: block;
   position: absolute;
@@ -126,9 +136,11 @@ time {
   box-sizing: border-box;
   color: #BACFDD;
   float: left;
+  font-family: sans-serif;
+  font-size: .9em;
 }
 
-/* line 58, ../sass/_timeline.scss */
+/* line 69, ../sass/_timeline.scss */
 .military-time {
   display: block;
   margin-top: 2%;
@@ -137,7 +149,7 @@ time {
   font-family: sans-serif;
 }
 
-/* line 67, ../sass/_timeline.scss */
+/* line 77, ../sass/_timeline.scss */
 .icon {
   background-color: #40A3DC;
   border: 6px solid #ADDCF9;
@@ -145,12 +157,12 @@ time {
   width: 32px;
   border-radius: 50%;
   position: absolute;
-  top: -8%;
-  left: -165%;
+  top: -7%;
+  left: -170%;
   text-align: center;
 }
 
-/* line 79, ../sass/_timeline.scss */
+/* line 88, ../sass/_timeline.scss */
 .timeline {
   width: 10px;
   background-color: #ADDCF9;
@@ -161,29 +173,42 @@ time {
   float: right;
 }
 
-/* line 90, ../sass/_timeline.scss */
+/* line 98, ../sass/_timeline.scss */
+.nub {
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  left: -0.5%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* line 108, ../sass/_timeline.scss */
 i {
   padding-top: 9px;
 }
 
 @media screen and (min-width: 668px) and (max-width: 1024px) {
-  /* line 100, ../sass/_timeline.scss */
+  /* line 113, ../sass/_timeline.scss */
   main {
     width: 95%;
     margin: 2%;
   }
 
-  /* line 105, ../sass/_timeline.scss */
+  /* line 118, ../sass/_timeline.scss */
   article {
     width: 80%;
+    margin-right: 0;
   }
 
-  /* line 109, ../sass/_timeline.scss */
+  /* line 123, ../sass/_timeline.scss */
   .timeline {
     left: -6.5%;
   }
 
-  /* line 113, ../sass/_timeline.scss */
+  /* line 127, ../sass/_timeline.scss */
   .military-time {
     left: -25%;
     font-size: 1.9em;
@@ -191,32 +216,34 @@ i {
   }
 }
 @media screen and (max-width: 667px) {
-  /* line 126, ../sass/_timeline.scss */
+  /* line 135, ../sass/_timeline.scss */
   main {
     width: 95%;
     margin: 2%;
   }
 
-  /* line 131, ../sass/_timeline.scss */
+  /* line 140, ../sass/_timeline.scss */
   article {
     width: 90%;
+    margin-right: 0;
   }
 
-  /* line 135, ../sass/_timeline.scss */
+  /* line 145, ../sass/_timeline.scss */
   .timeline {
     left: -8%;
   }
 
-  /* line 139, ../sass/_timeline.scss */
+  /* line 149, ../sass/_timeline.scss */
   time {
     position: relative;
     left: 0;
     float: right;
     top: -5%;
     text-shadow: #3F7391 1px 1px 0px;
+    color: #fff;
   }
 
-  /* line 147, ../sass/_timeline.scss */
+  /* line 158, ../sass/_timeline.scss */
   .military-time {
     position: relative;
     left: 0;
@@ -227,21 +254,21 @@ i {
     text-shadow: #3F7391 1px 1px 0px;
   }
 
-  /* line 159, ../sass/_timeline.scss */
+  /* line 168, ../sass/_timeline.scss */
   article:nth-of-type(odd) {
     background-color: #68BEF0;
   }
-  /* line 162, ../sass/_timeline.scss */
+  /* line 171, ../sass/_timeline.scss */
   article:nth-of-type(odd) .military-time {
-    color: #2E93CD;
+    color: #fff;
   }
 
-  /* line 167, ../sass/_timeline.scss */
+  /* line 176, ../sass/_timeline.scss */
   article:nth-last-of-type(even) {
     background-color: #2E93CD;
   }
-  /* line 170, ../sass/_timeline.scss */
+  /* line 179, ../sass/_timeline.scss */
   article:nth-last-of-type(even) .military-time {
-    color: #68BEF0;
+    color: #fff;
   }
 }
